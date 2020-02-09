@@ -73,13 +73,14 @@ header{
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  padding: 1.3rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
 }
+
 #container__right{
   background-color: white;
   font-family: 'monserrat', sans-serif;
   width: auto;
-
   padding-left: 40px;
   padding-bottom: 150px;
   padding-right: 50px;
@@ -114,18 +115,16 @@ header{
 }
 a.image {
   background-image: url(https://i.ibb.co/pzPxNHV/ohmyfood.jpg) ; 
-  width:14rem; /*width of your image*/
-  height:6rem; /*height of your image*/
+  width:14vw; /*width of your image*/
+  height:6vw; /*height of your image*/
   border : 1px solid black;
-  padding: 0;
   background-size: 100% 100%;
 }
 a.image2 {
   content: url(https://i.ibb.co/QMQ24Rg/minimo.png); 
-  width:14rem; /*width of your image*/
-  height:6rem; /*height of your image*/
+  width:14vw; /*width of your image*/
+  height:6vw; /*height of your image*/
   border : 1px solid black;
-  padding: 2em;
 }
 
 .p-apropos{
@@ -139,7 +138,7 @@ a.image2 {
 
 i::after{
   font-weight: bold;
-  content : "\a0\a0\a0\2003";
+  content : "\a0\a0";
 }
 @media (min-width:200px)  { /*smartphones*/
   #container{
@@ -171,9 +170,11 @@ i::after{
 
   .container__left__li-fontsize{
     font-size: 3vw;
-    text-align: center;
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
   }
-  
+ 
   .p-apropos {
     font-size: 3vw;
     width: 70%;
@@ -220,12 +221,10 @@ i::after{
 
 @media ( min-width : 768px ) { /*tablets*/
   #container__left{
-    width: auto;
+    width: 35%;
   }
 
-  #container__right{
-    width: auto;
-  }
+  
   .font-size > h1{
     font-size: 1.2vw ;
   }
@@ -249,6 +248,8 @@ i::after{
 
   .container__left__li-fontsize{
     font-size: 1.5vw ;
+    text-align: left;
+    width: 100%;
   }
 
   .container__left-titles{
@@ -266,7 +267,7 @@ i::after{
 
   .p-apropos{
     font-size: 1.5vw;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
   }
   #container{
@@ -276,14 +277,10 @@ i::after{
     justify-content: center;
   }
 
-  #container__left{
-    width: 30%;
-  }
-
   #photo{
     border-radius:50%;
-    height:8rem;
-    width: 8rem;
+    height:auto;
+    width: 13vw;
   }
 
   header{
@@ -296,8 +293,8 @@ i::after{
 @media ( min-width : 992px ) { /*desktops*/
   
   header {
-    padding-top: 170px;
-    padding-bottom: 170px;
+    padding-top: 5vw;
+    padding-bottom: 5.5vw;
   }
 
   .font-size > h1 {
@@ -313,7 +310,7 @@ i::after{
   .font-size > h3 {
     font-size: 1.3vw; 
     font-weight: bold;
-  margin-bottom: -0.5em; /* MAAAAAAAARGGGGIIIIIIINNNNNNNNNS*/
+    margin-bottom: -0.5em; /* MAAAAAAAARGGGGIIIIIIINNNNNNNNNS*/
   }
 
   .font-size > h4 {
@@ -336,6 +333,7 @@ i::after{
   .container__left__li-fontsize{
     font-size: 1.2vw;
     text-align: left;
+    width: 100%;
   }
 
   .p-apropos{
@@ -349,47 +347,38 @@ i::after{
     margin:  auto;
     max-width: 100%;
     justify-content: center;
-    line-height: none;
+   
   }
   #photo{
     border-radius:50%;
     height: auto;
-    width: 13rem;
+    width: 13vw;
   } 
   
   #container__left{
     width: 23%;
   }
+
   #container__left-image{
     margin-top: 50px;
   }
+
   #container__left-contact{
-    margin-top: 170px;
-  }
-  .ul-left{
-    margin-left: 30px;
-  
-  }
-  .ul-left-align{
-    text-align: center;
+    margin-top: 5vw;
   }
 
-  #container__left-github{
+   #container__left-github{
     margin-top: 100px;
   }
 
   a.image {
-    width:15rem; /*width of your image*/
-    height:6rem; /*height of your image*/
-    border : 1px solid black;
-    padding: 2em;
+    width:15vw; /*width of your image*/
+    height:6vw; /*height of your image*/    
   }
   a.image2 {
     content: url(https://i.ibb.co/QMQ24Rg/minimo.png); 
-    width:15rem; /*width of your image*/
-    height:6rem; /*height of your image*/
-    border : 1px solid black;
-    padding: 2em;
+    width:15vw; /*width of your image*/
+    height:6vw; /*height of your image*/ 
   }
 
 }
