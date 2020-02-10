@@ -1,7 +1,10 @@
 
+/********************
+GENERAL
+*/
+
 html{
   font-size: 100%;
-  
 }
 
 ul{
@@ -25,32 +28,57 @@ header{
   padding-top: 50px;
   padding-bottom:50px;
   text-align: center;
-  background-color: white;
-  margin-left: -40px;
-  margin-right: -50px;
+  background-color: rgb(254,254,254);
+  width: 100%;
+  margin: auto;
 }
 
-.name{
-    color: #333333;
-    font-family: monserrat;
-    font-weight: bold;
-}   
-
-.surname{
-  color: #49A2D5;
+.grid__experience{
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 30% 70% ;
 }
 
+.grid__formation{
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 30% 70% ;
+}
+
+/********************
+CONTAINERS
+*/
+#container{
+    width: 100%;
+    margin: auto;
+
+}
 #container__left{
   color:white;
   background-color:  #49A2D5;
-  width: auto;
+  width: 100%;
   font-family: 'monserrat', sans-serif;
+  margin: auto;
+  overflow:hidden;
 }
+
+#container__right{
+  background-color:rgb(254,254,254);
+  font-family: 'monserrat', sans-serif;
+  width: 90%;
+  padding-bottom: 150px;
+  color: rgb(74,74,74);
+  margin:auto;
+}
+
 .container__left-titles{
   border:1px solid #333333;
   background-color: #333333; ;
   text-align: center;
-  padding: 0.5rem ;
+  padding-top: 0.5rem ;
+  padding-bottom: 0.5rem;
 
 }
 #container__left-image{
@@ -69,68 +97,34 @@ header{
   height: auto; 
 }
 
-.ul-left-align{
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 1.3rem;
-  padding-bottom: 1.3rem;
-}
-
-#container__right{
-  background-color: white;
-  font-family: 'monserrat', sans-serif;
-  width: auto;
-  padding-left: 40px;
-  padding-bottom: 150px;
-  padding-right: 50px;
-}
-
-#container__right-formation{
+#container__right-portofolio{
   margin-top: 35px;
 }
 
-#container__right-portofolio{
-  margin-top: 35px
-}
-
-#photo{
-  border-radius:50%;
-  height:10rem;
-  width: 10rem;
-  border: 2px solid #333333;
-}
-
-.hr-black { 
-  display: block;
-  border-top: 3px solid #49A2D5;
-  max-width: 95%;
-  margin-left: 0px;
-}
+/********************
+PORTOFOLIO
+*/
 
 #projects-box{
   display: flex;
   justify-content: space-around;
   margin-top: 2em;
 }
+
 a.image {
   background-image: url(https://i.ibb.co/pzPxNHV/ohmyfood.jpg) ; 
-  width:14vw; /*width of your image*/
-  height:6vw; /*height of your image*/
   border : 1px solid black;
   background-size: 100% 100%;
 }
+
 a.image2 {
   content: url(https://i.ibb.co/QMQ24Rg/minimo.png); 
-  width:14vw; /*width of your image*/
-  height:6vw; /*height of your image*/
   border : 1px solid black;
 }
 
-.p-apropos{
-  width: 100%;
-  text-align: justify;
-}
+/********************
+MISCALEANOUS
+*/
 
 .fas_fa-at {
   color: white
@@ -140,66 +134,96 @@ i::after{
   font-weight: bold;
   content : "\a0\a0";
 }
-@media (min-width:200px)  { /*smartphones*/
-  #container{
-    margin:  auto;
-    width: 100%;
-  }
- .font-size > h1 {
-    font-size: 1.2vw;
-  }
 
-  .font-size > h2 {
-    font-size: 4vw;
-  }
+.surname{
+  color: #49A2D5;
+}
 
-  .font-size > h3 {
-    font-size: 3.2vw; 
-    font-weight: bold;
-  }
+.ul-left-align{
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
 
-  .font-size > h4 {
-    font-size: 3vw; 
-  }
+.p-apropos {
+  font-size: 3vw;
+  width: 70%;
+  margin: 0 auto; 
+  text-align: justify;
+}
 
-  .font-size-sm {
-    font-size: 2.7vw;
-    list-style: outside;
-    text-align: justify;
-  }
-
-  .container__left__li-fontsize{
-    font-size: 3vw;
-    text-align: left;
-    width: 50%;
-    margin: 0 auto;
-  }
- 
-  .p-apropos {
-    font-size: 3vw;
-    width: 70%;
-    margin: 0 auto; 
-  }
-
-  .container__left-titles{
-    font-size: 3.5vw;
-  }
-
-  .name{
-    font-size: 7vw;
-  } 
-
-  .cv-title{
-    color: #333333;
-    font: monserrat;
-    font-size: 4vw;
-  }
-
-  #photo{
+#photo{
     margin-top: 40px;
     border-radius:50%;
     height:10rem;
     width: 10rem;
+    border: 2px solid #333333;
+}
+
+.hr-black { 
+  display: block;
+  border-top: 3px solid #49A2D5;
+  max-width: 100%;
+  margin: auto;
+}
+
+/********************
+FONT SIZES
+*/
+
+.container__right__dates-font-size{
+  font-size: 2.6vw; 
+  margin-top: 15px;
+}
+
+.container__right__title-fontsize{
+  font-size: 3.2vw; 
+  margin-left: 25px;
+}
+
+.container__right__li-font-size {
+    font-size: 3vw;
+    list-style: outside;
+    text-align: justify;
+}
+
+.container__left__li-fontsize{
+    font-size: 3vw;
+}
+
+.container__left-titles{
+    font-size: 3.5vw;
+}
+
+.name{
+    font-size: 7vw;
+    color: #333333;
+    font-family: monserrat;
+    font-weight: bold;
+} 
+
+.cv-title{
+    color: #333333;
+    font: monserrat;
+    font-size: 4vw;
+}
+
+p{
+  margin-left: 25px;
+  text-align: justify;
+}
+
+/********************
+SMARTPHONES
+*/
+
+@media (min-width:200px)  { 
+  .container__left__li-fontsize{
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
   }
 
   #container__left-github{
@@ -208,163 +232,175 @@ i::after{
   }
 
   a.image {
-      width:10rem; /*width of your image*/
-      height:4rem; /*height of your image*/
+      width:10rem; 
+      height:4rem; 
       padding: 1em;
   }
+
   a.image2 {
-      width:10rem; /*width of your image*/
-      height:4rem; /*height of your image*/
+      width:10rem; 
+      height:4rem; 
       padding: 1em;
   }
 }
 
-@media ( min-width : 768px ) { /*tablets*/
+/********************
+TABLETS
+*/
+
+@media ( min-width : 768px ) { 
+ 
+  #container{
+    margin:  auto;
+    max-width: 100%;
+    height: auto;
+    display:flex;
+    justify-content: center;
+  }
+
   #container__left{
     width: 35%;
+    margin: 0;
   }
 
-  
-  .font-size > h1{
-    font-size: 1.2vw ;
+  #container__right{
+    width: 80%;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .container__right__dates-font-size{
+    font-size: 1.6vw; 
+    margin-top: 25px;
   }
 
-  .font-size > h2{
-    font-size: 2.3vw ;
-  }
-
-  .font-size > h3{
-    font-size: 1.9vw; 
-    font-weight: bold;
-  }
-
-  .font-size > h4{
-    font-size: 1.7vw 
+  .container__right__title-fontsize{
+    font-size: 2.2vw; 
   }
  
-  .font-size-sm{
-    font-size: 1.5vw ;
+  .container__right__li-font-size {
+    font-size: 1.8vw;
+  }
+
+  .container__right__parcours-fontsize{
+    font-size: 2.6vw;
   }
 
   .container__left__li-fontsize{
-    font-size: 1.5vw ;
+    font-size: 1.8vw ;
     text-align: left;
     width: 100%;
   }
 
   .container__left-titles{
-    font-size: 1rem ;
+    font-size: 2vw ;
   }
 
   .name{
-    font-size: 4vw;
+    font-size: 4.5vw;
   }   
+
   .cv-title{
-    color: #333333;
-    font: monserrat;
-    font-size: 2.4vw;
+    font-size: 3vw;
   }
 
   .p-apropos{
-    font-size: 1.5vw;
+    font-size: 1.6vw;
     width: 80%;
-    margin: 0 auto;
   }
-  #container{
-    margin:  auto;
-    max-width: 100%;
-    display:flex;
-    justify-content: center;
-  }
-
-  #photo{
-    border-radius:50%;
-    height:auto;
-    width: 13vw;
-  }
-
+ 
   header{
     padding-top: 80px;
     padding-bottom: 70px;
   }
+
+  #photo{
+    margin-top: 40px;
+    border-radius:50%;
+    height:auto;
+    width: 18vw;
+    border: 2px solid #333333;
+    margin-bottom: 25px;
+  }
 }
   
+/********************
+DESKTOPS
+*/
 
-@media ( min-width : 992px ) { /*desktops*/
+@media ( min-width : 992px ) { 
   
   header {
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding-top: 100px;
+    margin-bottom: 40px;
   }
 
-  .font-size > h1 {
-    font-size: 1.6vw ;
-
+  .grid__experience, .grid__formation{
+    grid-template-columns: 40% 60% ;
   }
 
-  .font-size > h2 {
-    font-size: 1.4vw ;
-    
+  #container{
+    display:flex;
+    margin: auto;
+    width: 70%;
+    justify-content: center;
   }
 
-  .font-size > h3 {
-    font-size: 1.3vw; 
-    font-weight: bold;
-    margin-bottom: -0.5em; /* MAAAAAAAARGGGGIIIIIIINNNNNNNNNS*/
+  #container__left{
+    width: 35%;
   }
 
-  .font-size > h4 {
+  .container__right__dates-font-size{
     font-size: 1.2vw; 
-    margin-bottom: -0.5em;
+    margin-top: 50px;
   }
 
-  .font-size-sm{
-    font-size: 1vw ;
+  .container__right__title-fontsize{
+    font-size: 1.2vw; 
+    margin-top: 50px;
+  }
+ 
+  .container__right__li-font-size {
+    font-size: 1vw;
+    margin-right: 25px;
   }
 
-  .name{
-    font-size: 4vw;
-  }   
-  .cv-title{
-    color: #333333;
-    font: monserrat;
-    font-size: 2.5vw;
+  .container__right__parcours-fontsize{
+    font-size: 1.8vw;
   }
+
   .container__left__li-fontsize{
-    font-size: 1.2vw;
+    font-size: 1vw;
     text-align: left;
     width: 100%;
   }
 
+   .container__left-titles{
+    font-size: 1.3vw ;
+  }
+
+  .name{
+    font-size: 3.5vw;
+  } 
+
+  .cv-title{
+    font-size: 2.2vw;
+  }
+
   .p-apropos{
-    font-size: 1vw;
+    font-size: 0.9vw;
+    margin-left: 25px;
   }
-  .container__left-titles{
-    font-size: 1.4vw ;    
-  }
-  #container{
-    display:flex;
-    margin:  auto;
-    max-width: 100%;
-    justify-content: center;
-   
-  }
+  
   #photo{
     border-radius:50%;
     height: auto;
-    width: 13vw;
+    width: 11vw;
+    height: auto;
+    margin-top: 50px;
   } 
   
-  #container__left{
-    width: 23%;
-  }
-
-  #container__left-image{
-    margin-top: 50px;
-  }
-
   #container__left-contact{
-    margin-top: 5vw;
+    margin-top: 100px;
   }
 
    #container__left-github{
@@ -372,14 +408,14 @@ i::after{
   }
 
   a.image {
-    width:15vw; /*width of your image*/
-    height:6vw; /*height of your image*/    
+    width:15vw; 
+    height:6vw;    
   }
+  
   a.image2 {
     content: url(https://i.ibb.co/QMQ24Rg/minimo.png); 
-    width:15vw; /*width of your image*/
-    height:6vw; /*height of your image*/ 
+    width:15vw; 
+    height:6vw; 
   }
 
 }
-
