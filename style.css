@@ -130,6 +130,14 @@ MISCALEANOUS
   color: white
 }
 
+h3 > i{
+  color: #333333;
+}
+
+h4> i{
+  color: #333333;
+}
+
 i::after{
   font-weight: bold;
   content : "\a0\a0";
@@ -176,6 +184,8 @@ FONT SIZES
 .container__right__dates-font-size{
   font-size: 2.6vw; 
   margin-top: 15px;
+  color: #49A2D5;
+  line-height: 0.5px;
 }
 
 .container__right__title-fontsize{
@@ -270,9 +280,12 @@ TABLETS
   }
   .container__right__dates-font-size{
     font-size: 1.6vw; 
-    margin-top: 25px;
   }
 
+  h3.container__right__dates-font-size {
+    margin-top: 25px;
+  }
+  
   .container__right__title-fontsize{
     font-size: 2.2vw; 
   }
@@ -350,15 +363,14 @@ DESKTOPS
   }
 
   .container__right__dates-font-size{
-    font-size: 1.2vw; 
-    margin-top: 50px;
+    font-size: 1vw; 
   }
 
   .container__right__title-fontsize{
     font-size: 1.2vw; 
-    margin-top: 50px;
+    
   }
- 
+  
   .container__right__li-font-size {
     font-size: 1vw;
     margin-right: 25px;
@@ -408,14 +420,14 @@ DESKTOPS
   }
 
   a.image {
-    width:15vw; 
-    height:6vw;    
+    width:14vw; 
+    height:5vw;    
   }
   
   a.image2 {
     content: url(https://i.ibb.co/QMQ24Rg/minimo.png); 
-    width:15vw; 
-    height:6vw; 
+    width:14vw; 
+    height:5vw; 
   }
 
 }
