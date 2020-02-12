@@ -194,31 +194,31 @@ FONT SIZES
 }
 
 .container__right__li-font-size {
-    font-size: 3vw;
-    list-style: outside;
-    text-align: justify;
-    line-height: 30px;
+  font-size: 3vw;
+  list-style: outside;
+  text-align: justify;
+  line-height: 30px;
 }
 
 .container__left__li-fontsize{
-    font-size: 3vw;
+  font-size: 3vw;
 }
 
 .container__left-titles{
-    font-size: 3.5vw;
+  font-size: 3.5vw;
 }
 
 .name{
-    font-size: 7vw;
-    color: #333333;
-    font-family: monserrat;
-    font-weight: bold;
+  font-size: 7vw;
+  color: #333333;
+  font-family: monserrat;
+  font-weight: bold;
 } 
 
 .cv-title{
-    color: #333333;
-    font: monserrat;
-    font-size: 4vw;
+  color: #333333;
+  font: monserrat;
+  font-size: 4vw;
 }
 
 p{
@@ -243,15 +243,15 @@ SMARTPHONES
   }
 
   a.image {
-      width:10rem; 
-      height:4rem; 
-      padding: 1em;
+    width:10rem; 
+    height:4rem; 
+    padding: 1em;
   }
 
   a.image2 {
-      width:10rem; 
-      height:4rem; 
-      padding: 1em;
+    width:10rem; 
+    height:4rem; 
+    padding: 1em;
   }
 }
 
@@ -281,7 +281,7 @@ TABLETS
     font-size: 1.6vw; 
     margin-left: 25px;
   }
-  
+
 
   h3.container__right__dates-font-size {
     margin-top: 25px;
