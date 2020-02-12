@@ -7,6 +7,9 @@ html{
   font-size: 100%;
 }
 
+body{
+
+}
 ul{
   list-style: none;
 }
@@ -28,7 +31,7 @@ header{
   padding-top: 50px;
   padding-bottom:50px;
   text-align: center;
-  background-color: rgb(254,254,254);
+  background-color: rgb(255, 250 ,250);
   width: 100%;
   margin: auto;
 }
@@ -53,7 +56,6 @@ CONTAINERS
 #container{
     width: 100%;
     margin: auto;
-
 }
 #container__left{
   color:white;
@@ -61,11 +63,10 @@ CONTAINERS
   width: 100%;
   font-family: 'monserrat', sans-serif;
   margin: auto;
-  overflow:hidden;
 }
 
 #container__right{
-  background-color:rgb(254,254,254);
+  background-color:rgb(255, 250 ,250);
   font-family: 'monserrat', sans-serif;
   width: 90%;
   padding-bottom: 150px;
@@ -163,11 +164,11 @@ i::after{
 }
 
 #photo{
-    margin-top: 40px;
-    border-radius:50%;
-    height:10rem;
-    width: 10rem;
-    border: 2px solid #333333;
+  margin-top: 40px;
+  border-radius:50%;
+  height:10rem;
+  width: 10rem;
+  border: 2px solid #333333;
 }
 
 .hr-black { 
@@ -275,12 +276,12 @@ TABLETS
 
   #container__right{
     width: 80%;
-    margin-left: 25px;
-    margin-right: 25px;
   }
   .container__right__dates-font-size{
     font-size: 1.6vw; 
+    margin-left: 25px;
   }
+  
 
   h3.container__right__dates-font-size {
     margin-top: 25px;
@@ -296,6 +297,7 @@ TABLETS
 
   .container__right__parcours-fontsize{
     font-size: 2.6vw;
+    margin-left: 25px;
   }
 
   .container__left__li-fontsize{
